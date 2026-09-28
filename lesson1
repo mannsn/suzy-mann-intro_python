@@ -29,7 +29,7 @@ print ("Hi,",name,"! You are approximately", age, "years old.")
 print ("\n***Section 3")
 number1 = float(input ("Enter a number:"))
 number2 = float(input ("Enter a second number:"))
-print (f"{number1 * number2}")
+print (f"{number1} multiplied by {number2} = {number1 * number2}")
 
 #Section 4
 print ("\n***Section 4")
@@ -41,10 +41,10 @@ print(f"\n===========================")
 print (f"          RECEIPT")
 print(f"===========================")
 print(f"Item:      {item}")
-print(f"Price:     ${price}")
+print(f"Price:     ${price:.2f}")
 print(f"Quantity:  {quantity}")
 print(f"--------------------------")
-print(f"Total:     ${total}")
+print(f"Total:     ${total:.2f}")
 print(f"===========================")
 
 
@@ -64,4 +64,5 @@ print(f"Hometown:      {profile_hometown}")
 print(f"Hobby:         {profile_hobby}")
 print(f"Fun fact:      {profile_funfact}")
 print(f"Age:           {profile_age}")
+
 
