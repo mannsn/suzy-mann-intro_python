@@ -1,0 +1,68 @@
+name = "Suzy"
+age = 64
+height = 5.6
+is_student = True
+
+#Section 1
+print ("\n***Section 1")
+print(name, type(name))
+print(age, type(age))
+print(height, type(height))
+print(is_student, type(is_student))
+
+
+#Section 2
+print ("\n***Section 2")
+name = input("What is your name? ")
+year = int(input ("What is the year you were born? "))
+
+
+#Calculate age based on input year and current year
+import datetime
+current_date = datetime.datetime.now()
+current_year = current_date.year
+age = current_year - year
+
+print ("Hi,",name,"! You are approximately", age, "years old.")
+
+#Section 3
+print ("\n***Section 3")
+number1 = float(input ("Enter a number:"))
+number2 = float(input ("Enter a second number:"))
+print (f"{number1} multiplied by {number2} = {number1 * number2}")
+
+#Section 4
+print ("\n***Section 4")
+item = "Fat quarter"
+price = 5.0
+quantity = 3
+total = price * quantity
+print(f"\n===========================")
+print (f"          RECEIPT")
+print(f"===========================")
+print(f"Item:      {item}")
+print(f"Price:     ${price:.2f}")
+print(f"Quantity:  {quantity}")
+print(f"--------------------------")
+print(f"Total:     ${total:.2f}")
+print(f"===========================")
+
+
+#Section 5
+print ("\n***Section 5")
+profile_name = input("Enter your name:")
+profile_hometown = input("Enter your hometown - city, state:")
+profile_hobby = input("Enter your hobby:")
+profile_funfact = input("Enter your fun_fact:")
+profile_birth_year = int( input("Enter your birth year:"))
+profile_age = current_year - profile_birth_year
+
+print(f"\n╔══════════════════════════════╗")
+print(f"  PROFILE:      {profile_name}")
+print(f"╚══════════════════════════════╝")
+print(f"Hometown:      {profile_hometown}")
+print(f"Hobby:         {profile_hobby}")
+print(f"Fun fact:      {profile_funfact}")
+print(f"Age:           {profile_age}")
+
+
